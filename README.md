@@ -6,21 +6,22 @@ This repository contains various practice exercises for modern web development, 
 ```
 /practice
   ├── /css
-  │    ├── /tailwind       # Tailwind CSS practice
-  │    └── /vanilla        # Vanilla CSS (pure CSS exercises)
-  ├── /html                # HTML practice
+  │    ├── /tailwind
+  │    └── /vanilla
+  ├── /html
   ├── /javascript
-  │    ├── /angular        # Angular practice
-  │    ├── /jquery         # jQuery exercises
-  │    ├── /p5js           # p5.js creative coding
-  │    ├── /react          # React practice
-  │    ├── /threejs        # Three.js 3D graphics
-  │    ├── /vanilla        # Pure JavaScript
-  │    ├── /vue            # Vue.js practice
-  │    └── /websocket      # WebSocket communication
-  ├── /php                 # PHP practice (database, login system, file upload)
-  │    ├── /laravel        # Laravel practice
-  └── /assets              # Static files (images, fonts, etc.)
+  │    ├── /angular
+  │    ├── /jquery
+  │    ├── /p5js
+  │    ├── /react
+  │    ├── /threejs
+  │    ├── /vanilla
+  │    ├── /vue
+  │    └── /websocket
+  ├── /php
+  │    ├── /vanilla
+  │    ├── /laravel
+  └── /assets
 ```
 
 ---
