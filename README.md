@@ -19,6 +19,7 @@ This repository contains various practice exercises for modern web development, 
   │    ├── /vue            # Vue.js practice
   │    └── /websocket      # WebSocket communication
   ├── /php                 # PHP practice (database, login system, file upload)
+  │    ├── /laravel        # Laravel practice
   └── /assets              # Static files (images, fonts, etc.)
 ```
 
