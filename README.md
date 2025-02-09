@@ -2,28 +2,6 @@
 
 This repository contains various practice exercises for modern web development, including HTML, CSS, JavaScript, PHP, and popular libraries or frameworks such as Tailwind CSS, jQuery, Vue, React, and Three.js.
 
-## 📂 Folder Structure
-```
-/practice
-  ├── /css
-  │    ├── /tailwind
-  │    └── /vanilla
-  ├── /html
-  ├── /javascript
-  │    ├── /angular
-  │    ├── /jquery
-  │    ├── /p5js
-  │    ├── /react
-  │    ├── /threejs
-  │    ├── /vanilla
-  │    ├── /vue
-  │    └── /websocket
-  ├── /php
-  │    ├── /vanilla
-  │    ├── /laravel
-  └── /assets
-```
-
 ---
 
 ## 📚 Included Technologies
