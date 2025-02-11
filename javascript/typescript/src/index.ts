@@ -1,37 +1,37 @@
-let username: string = "NoTimeX";
-let age: number = 15;
-let isStudent: boolean = true;
-
-let scores: number[] = [90, 85, 78];
-let fruits: string[] = ["apple", "banana", "orange"];
-
-let user: { name: string; age: number; isStudent: boolean } = {
-    name: "Ashton",
-    age: 15,
-    isStudent: true,
-};
-
-function greet(name: string): string {
-    return `Hello, ${name}!`;
-};
-
-console.log(greet("Ashton"));
-
 interface User {
+    id: number;
     name: string;
+    email: string;
     age: number;
-    isStudent: boolean;
-};
+    isAdmin: boolean;
+}
 
-let user1: User = {
+function updateUser(user: User, fields: Partial<User>): User {
+    return { ...user, ...fields };
+}
+
+const user: User = {
+    id: 1,
     name: "Ashton",
+    email: "ashton@example.com",
     age: 15,
-    isStudent: true,
+    isAdmin: false,
 };
 
-function identity<T>(arg: T): T {
-    return arg;
-};
+const updatedUser = updateUser(user, { name: "Jack", age: 16 });
+console.log(updatedUser);
 
-console.log(identity<number>(42));
-console.log(identity<string>("Hello"));
+function validateUpdateFields(fields: Partial<User>): void {
+    if ("id" in fields) throw new Error("The 'id' field cannot be updated.");
+}
+
+try {
+    validateUpdateFields({ id: 2 });
+} catch (error) {
+    if (error instanceof Error) {
+        console.error(error.message);
+    }
+}
+
+const validFields = { name: "Jack", age: 16 };
+validateUpdateFields(validFields);
